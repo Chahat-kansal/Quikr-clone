@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .container1 {
+  position: relative;
+  width: 50%;
+   bottom: 1130px;
+  left: 230px;
+}
+ .container2 {
+  position: relative;
+  width: 50%;
+   bottom: 1354px;
+  left: 605px;
+}
+.container3 {
+  position: relative;
+  width: 50%;
+   bottom: 1579px;
+  left: 975px;
+}
+.image1 {
+  display: block;
+  width: 50%;
+  height: auto;
+  opacity: .7;
+  border: 1px solid black;
+  bottom: 1130px;
+  left: 230px;
+  
+}
+.image2 {
+  display: block;
+  width: 50%;
+  height: 222px;
+  opacity: .7;
+  border: 1px solid black;
+  bottom: 1130px;
+  left: 230px;
+  
+}
+.image3 {
+  display: block;
+  width: 50%;
+  height: 221px;
+  opacity: .7;
+  border: 1px solid black;
+  bottom: 1122px;
+  left: 230px;
+  
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 50%;
+  height:0;
+  transition: .5s ease;
+ // border: 1px solid black;
+ 
+}
+
+.container1:hover .overlay1 {
+  bottom: 0;
+  height: 100%;
+  
+}
+.container2:hover .overlay1 {
+  bottom: 0;
+  height: 100%;
+  
+}
+.container3:hover .overlay1 {
+  bottom: 0;
+  height: 100%;
+  
+}
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.inl{
+    display: inline;
+}
+.bat{
+    width: 15%;
+    text-align:center;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: .4;
+    
+}
+.elec{
+    width: 15%;
+    text-align:center;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: .4;
+position:relative;
+   left: 230px;
+   bottom: 550px;
+}
+.img1{
+    position: absolute;
+  left: 230px;
+  bottom: 930px;
+  opacity: .6;
+  border: 1px solid black;
+}
+.eas{
+    width: 15%;
+    text-align:center;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: .4;
+   position: relative;
+   left: 890px;
+   bottom: 1000px;
+}
+.spe{
+    width: 15%;
+    text-align:center;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: .4;
+   position: relative;
+   left: 1110px;
+   bottom: 1150px;
+}
+.job{
+    width: 15%;
+    text-align:center;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: .4;
+   position: relative;
+   left: 670px;
+   bottom: 850px;
+}
+.hom{
+    width: 15%;
+    text-align:center;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.5);
+    opacity: .4;
+   position: relative;
+   left: 450px;
+   bottom: 700px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  display: inline;
+  z-index: 100;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.bat a{ color: #f1f1f1
+}
+.elec a{color: #f1f1f1}
+.hom a{color: #f1f1f1}
+.job a {color: #f1f1f1}
+.spe a{color: #f1f1f1}
+.eas a{color: #f1f1f1}
+.text1 a{color: #f1f1f1}
+.text2 a{color: #f1f1f1}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 10px}
+  .overlay .closebtn {
+    font-size: 10px;
+    top: 25px;
+    right: 35px;
+  }
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+ .btn {
+    background-color: rgba(0,0,0);
+    opacity: 0.4;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.abc
+{
+    background-color: #4CAF50;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -2;
+}
+.img {
+  position: absolute;
+
+}
+.img1 {
+  display: block;
+  
+ 
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.img:hover .overlay2 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+ 
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="login.html">Login/Signup</a>
+    <a href="">My Account</a>
+    <a href="">Orders And Payments</a>
+    <a href="#">My Ads</a>
+    <h3> Categories</h3>
+     <a href="">Assured Products and Services</a>
+         <a href="#">Services</a>
+    <a href="Categories.html">Jobs</a>
+    <a href="Categories.html">Cars</a>
+    <a href="Categories.html">Bikes</a>
+    <a href="Categories.html">Furniture and Decor</a>
+    <a href="Categories.html">Electronics and Appliances</a>
+    <a href="Categories.html">Homes</a>
+    <a href="Categories.html">Mobiles and Tablets</a>
+    <a href="#"></a>
+
+
+    
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img src="Quikr1-Logo.png" width="100px" height="30px"></span>
+
+
+<div class="topnav">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select>
+    <option value="All India" selected>All India</option>
+
+  <option value="Andaman and Nicobars islands">Andaman and Nicobar islands</option>
+  <option value="Andhra Pradesh">Andhra Pradesh</option>
+  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+  <option value="Assam">Assam</option>
+  <option value="Bihar">Bihar</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Chattisgarh">Chattisgarh</option>
+  <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+  <option value="Daman and Diu">Daman and Diu</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Goa">Goa</option>
+  <option value="Gujarat">Gujarat</option>
+  <option value="Haryana">Haryana</option>
+  <option value="Himachal Pradesh">Himachal Pradesh</option>
+  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+  <option value="Jharkhand">Jharkhand</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Lakshadweep">Lakshadweep</option>
+  <option value="Madhya Pradesh">Madhya Pradesh</option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Manipur">Manipur</option>
+  <option value="Meghalaya">Meghalaya</option>
+  <option value="Mizoram">Mizoram</option>
+  <option value="Nagaland">Nagaland</option>
+  <option value="Orissa">Orissa</option>
+  <option value="Pondicherry">Pondicherry</option>
+  <option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="West Bangal">West Bangal</option>
+
+  
+</select>
+<button class="btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Register</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="Login" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="abc" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+    </form>
+  </div>
+</div>
+
+<video autoplay muted loop id="myVideo">
+  <source src="Pexels Videos 5014.mp4" type="video/mp4">
+ 
+</video>
+
+<div class="bat">
+    <a href="All Classifieds.html"> Electronics</a><br><br>
+    <a href="All Classifieds.html"> Bikes</a><br><br>
+    <a href="All Classifieds.html"> Cars</a><br><br>
+    <a href="All Classifieds.html"> Mobiles</a><br><br>
+    <a href="All Classifieds.html"> Furniture and Decor</a><br><br>
+    <a href="All Classifieds.html"> Homes</a><br><br>
+    <a href="All Classifieds.html"> Home Appliances</a><br><br>
+    <a href="All Classifieds.html"> Kitchen</a><br><br>
+    <a href="All Classifieds.html">Jobs</a><br><br>
+    <a href="All Classifieds.html">Services</a><br><br>
+    <a href="All Classifieds.html">Kids and Toys</a><br><br>
+    <a href="All Classifieds.html">Sports</a><br><br>
+    <a href="All Classifieds.html">Hobbies</a><br><br>
+    <a href="All Classifieds.html">Fashion</a><br><br>
+    <a href="All Classifieds.html">Education</a>
+  </div>
+<div class="elec">
+    <img src="Quikr-cars-logo-01.png" width="100px" height="30px"><br><br>
+    <a href="All Classifieds.html">Used Cars</a><br><br>
+    <a href="All Classifieds.html">New Cars</a><br><br>
+    <a href="All Classifieds.html">RTO Services</a><br><br>
+</div>
+  <div class="hom">
+    <img src="QuikrHomes-Logo.png" width="100px" height="30px"><br><br>
+    <a href="All Classifieds.html">PGs for Men</a><br><br>
+    <a href="All Classifieds.html">PGs for Women</a><br><br>
+    <a href="All Classifieds.html">Shared Rooms</a><br><br>
+</div>
+  <div class="job">
+    <img src="QuikrJobs-Logo.png" width="100px" height="30px"><br><br>
+    <a href="All Classifieds.html">BPo/Telecaller</a><br><br>
+    <a href="All Classifieds.html">Delivery/Collections</a><br><br>
+    <a href="All Classifieds.html">Data Entry/Bank Office</a><br><br>
+</div>
+  <div class="eas">
+    <img src="quikr-easy-logo.png" width="100px" height="30px"><br><br>
+    <a href="All Classifieds.html">SalonAtHome</a><br><br>
+    <a href="All Classifieds.html">Home Services</a><br><br>
+    <a href="All Classifieds.html">Pick Up Drop Off</a><br><br>
+</div>
+  <div class="spe">
+    <img src="Quikr-Speaks-logo-13@2x.png" width="100px" height="30px"><br><br>
+    <a href="All Classifieds.html">Education and Training</a><br><br>
+    <a href="All Classifieds.html">Entertainment</a><br><br>
+    <a href="All Classifieds.html">Events</a><br><br>
+  </div>
+ <div class="container1">
+  <img src="cars.jpg" alt="Avatar" class="image1" width="300px" height="50px">
+  <div class="overlay1">
+      <div class="text1"><a href="Post Ad .jsp">Post Free Ad</a></div>
+      <div class="text2"><a href="All Classifieds.html">BUY</a></div>
+  </div>
+</div>
+<div class="container2">
+  <img src="smartphone_camera_gt12.jpg" alt="Avatar" class="image2" width="300px" height="50px">
+  <div class="overlay1">
+      <div class="text1"><a href="Post Ad .jsp">Post Free Ad</a></div>
+      <div class="text2"><a href="All Classifieds.html">BUY</a></div>
+  </div>
+</div><div class="container3">
+  <img src="download.jpg" alt="Avatar" class="image3" width="300px" height="50px">
+  <div class="overlay1">
+      <div class="text1"><a href="Post Ad .jsp">Post Free Ad</a></div>
+      <div class="text2"><a href="All Classifieds.html">BUY</a></div>
+  </div>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+     
+</body>
+</html>
